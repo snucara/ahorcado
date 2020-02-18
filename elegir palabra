@@ -1,0 +1,11 @@
+import random
+
+def elegir():
+
+     diccionario=(["S","E","B","A","S","T","I","A","N"],["H","E","R","N","A","N"],["F","E","D","E","R","I","C","O"],
+                  ["N","E","S","T","O","R"],["D","I","E","G","O"],["E","N","R","I","Q","U","E"],
+                  ["C","R","I","S","T","I","A","N"],["G","U","I","L","L","E","R","M","O"],["F","A","C","U","N","D","O"],
+                  ["A","L","B","E","R","T","O"])
+     palabra=random.choice(diccionario)
+
+     return palabra

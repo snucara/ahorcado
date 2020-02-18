@@ -1,0 +1,62 @@
+import elegirpalabra
+import muñeco
+import os
+
+def main():
+     jugar="SI"
+     while True:
+           os.system("cls")
+           if  jugar!="SI":
+              break
+
+           palabra=elegirpalabra.elegir()
+           adivinar=len(palabra)*["_"]
+           fallos=0
+           print("     ")
+           while True:
+                 print(adivinar)
+                 muñeco.muñeco(fallos)
+                 if not "_" in adivinar:
+                     print("-------------------")
+                     print("     GANASTE!!!")
+                     print("-------------------")
+                     jugar = input("¿jugamos de nuevo?<si-no>?")
+                     jugar=jugar.upper()
+                     break
+
+                 if fallos == 6:
+                     print("-----------------------")
+                     print("       AHORCADO")
+                     print("-----------------------")
+                     jugar = input("¿jugamos de nuevo?<si-no>?")
+                     jugar=jugar.upper()
+                     break
+
+
+                 letra=input("Ingresa letra:")
+                 letra=letra.upper()
+
+                 os.system("cls")
+
+                 if(letra in palabra):
+                        contador=0
+                        for i in palabra:
+                            if(letra[0] == palabra[contador]):
+                                   adivinar[contador] = letra[0]
+
+                            contador = contador + 1
+
+                 else:
+                       fallos=fallos+1
+                       print("la letra '{}'no esta en la palabra".format(letra))
+                       print("   ")
+
+
+
+
+
+
+
+
+
+main()

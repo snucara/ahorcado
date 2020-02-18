@@ -1,0 +1,87 @@
+def muñeco(fallos):
+
+    if fallos == 6:
+        print(" ___________")
+        print("|          0  ")
+        print("|     +----|----+  ")
+        print("|          |                ")
+        print("|          |                 ")
+        print("|         /|                ")
+        print("|        / |")
+        print("|       °  °  ")
+        print("|")
+        print("==========================")
+        print("        ")
+
+
+    elif fallos == 5:
+        print(" ___________")
+        print("|          0  ")
+        print("|     +----|----+  ")
+        print("|          |")
+        print("|          |")
+        print("|         / ")
+        print("|        /  ")
+        print("|       ° ")
+        print("|")
+        print("==========================")
+
+    elif fallos == 4:
+        print(" ___________")
+        print("|          0  ")
+        print("|     +----|----+  ")
+        print("|          |")
+        print("|          |")
+        print("| ")
+        print("| ")
+        print("| ")
+        print("|")
+        print("==========================")
+
+    elif fallos == 3:
+        print(" ___________")
+        print("|          0  ")
+        print("|          |----+  ")
+        print("|          |")
+        print("|          |")
+        print("| ")
+        print("| ")
+        print("| ")
+        print("|")
+        print("==========================")
+
+    elif fallos == 2:
+        print(" ___________")
+        print("|          0  ")
+        print("|          |")
+        print("|          |")
+        print("|          |")
+        print("| ")
+        print("| ")
+        print("|  ")
+        print("|")
+        print("==========================")
+
+    elif fallos == 1:
+        print(" ___________")
+        print("|          0  ")
+        print("|  ")
+        print("|  ")
+        print("|  ")
+        print("|  ")
+        print("|   ")
+        print("|  ")
+        print("|")
+        print("==========================")
+
+    elif fallos == 0:
+        print(" ____________")
+        print("| ")
+        print("| ")
+        print("| ")
+        print("| ")
+        print("| ")
+        print("| ")
+        print("| ")
+        print("|")
+        print("==========================")
